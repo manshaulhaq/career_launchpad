@@ -1,1 +1,1 @@
-it is what it is
+Repo for tasks of Career Launcpad.
