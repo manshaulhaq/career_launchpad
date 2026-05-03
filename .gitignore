@@ -1,0 +1,9 @@
+# Ignore all other weekly folders
+week1/
+week2/
+week3/
+
+# Inside week4, ignore the heavy stuff
+week4/results/
+week4/sentiment_model/
+week4/__pycache__/
