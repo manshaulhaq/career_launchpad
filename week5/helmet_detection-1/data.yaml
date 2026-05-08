@@ -1,0 +1,13 @@
+names:
+- With Helmet
+- Without Helmet
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: helmet_detection-kmc53
+  url: https://universe.roboflow.com/mansha-ulhaq-s-workspace/helmet_detection-kmc53/dataset/1
+  version: 1
+  workspace: mansha-ulhaq-s-workspace
+test: ../test/images
+train: ../train/images
+val: ../valid/images
