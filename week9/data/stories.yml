@@ -1,0 +1,14 @@
+version: '3.1'
+stories:
+- story: happy path track order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_order
+  - action: utter_ask_order_id
+  - intent: inform_order_id
+    entities:
+    - order_id: '12345'
+  - slot_was_set:
+    - order_id: '12345'
+  - action: action_track_order

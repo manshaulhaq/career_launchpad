@@ -1,0 +1,115 @@
+version: '3.1'
+intents:
+- cancel_order
+- change_order
+- change_shipping_address
+- check_cancellation_fee
+- check_invoice
+- check_payment_methods
+- check_refund_policy
+- complaint
+- contact_customer_service
+- contact_human_agent
+- create_account
+- delete_account
+- delivery_options
+- delivery_period
+- edit_account
+- get_invoice
+- get_refund
+- newsletter_subscription
+- payment_issue
+- place_order
+- recover_password
+- registration_problems
+- review
+- set_up_shipping_address
+- switch_account
+- track_order
+- track_refund
+- greet
+- goodbye
+- inform_order_id
+entities:
+- order_id
+- email
+slots:
+  order_id:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: order_id
+responses:
+  utter_greet:
+  - text: Hello! How can I help you with your order or account today?
+  utter_goodbye:
+  - text: Goodbye! Have a great day.
+  utter_ask_order_id:
+  - text: Could you please provide your order ID?
+  utter_default:
+  - text: I'm sorry, I didn't quite catch that. Could you rephrase?
+  utter_cancel_order:
+  - text: I can certainly help you with cancel order. Please provide more details.
+  utter_change_order:
+  - text: I can certainly help you with change order. Please provide more details.
+  utter_change_shipping_address:
+  - text: I can certainly help you with change shipping address. Please provide more
+      details.
+  utter_check_cancellation_fee:
+  - text: I can certainly help you with check cancellation fee. Please provide more
+      details.
+  utter_check_invoice:
+  - text: I can certainly help you with check invoice. Please provide more details.
+  utter_check_payment_methods:
+  - text: I can certainly help you with check payment methods. Please provide more
+      details.
+  utter_check_refund_policy:
+  - text: I can certainly help you with check refund policy. Please provide more details.
+  utter_complaint:
+  - text: I can certainly help you with complaint. Please provide more details.
+  utter_contact_customer_service:
+  - text: I can certainly help you with contact customer service. Please provide more
+      details.
+  utter_contact_human_agent:
+  - text: I can certainly help you with contact human agent. Please provide more details.
+  utter_create_account:
+  - text: I can certainly help you with create account. Please provide more details.
+  utter_delete_account:
+  - text: I can certainly help you with delete account. Please provide more details.
+  utter_delivery_options:
+  - text: I can certainly help you with delivery options. Please provide more details.
+  utter_delivery_period:
+  - text: I can certainly help you with delivery period. Please provide more details.
+  utter_edit_account:
+  - text: I can certainly help you with edit account. Please provide more details.
+  utter_get_invoice:
+  - text: I can certainly help you with get invoice. Please provide more details.
+  utter_get_refund:
+  - text: I can certainly help you with get refund. Please provide more details.
+  utter_newsletter_subscription:
+  - text: I can certainly help you with newsletter subscription. Please provide more
+      details.
+  utter_payment_issue:
+  - text: I can certainly help you with payment issue. Please provide more details.
+  utter_place_order:
+  - text: I can certainly help you with place order. Please provide more details.
+  utter_recover_password:
+  - text: I can certainly help you with recover password. Please provide more details.
+  utter_registration_problems:
+  - text: I can certainly help you with registration problems. Please provide more
+      details.
+  utter_review:
+  - text: I can certainly help you with review. Please provide more details.
+  utter_set_up_shipping_address:
+  - text: I can certainly help you with set up shipping address. Please provide more
+      details.
+  utter_switch_account:
+  - text: I can certainly help you with switch account. Please provide more details.
+  utter_track_order:
+  - text: I can certainly help you with track order. Please provide more details.
+  utter_track_refund:
+  - text: I can certainly help you with track refund. Please provide more details.
+actions:
+- action_track_order
+- validate_track_order_form

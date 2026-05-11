@@ -1,0 +1,118 @@
+version: '3.1'
+rules:
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+- rule: Handle fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+- rule: Handle cancel_order
+  steps:
+  - intent: cancel_order
+  - action: utter_cancel_order
+- rule: Handle change_order
+  steps:
+  - intent: change_order
+  - action: utter_change_order
+- rule: Handle change_shipping_address
+  steps:
+  - intent: change_shipping_address
+  - action: utter_change_shipping_address
+- rule: Handle check_cancellation_fee
+  steps:
+  - intent: check_cancellation_fee
+  - action: utter_check_cancellation_fee
+- rule: Handle check_invoice
+  steps:
+  - intent: check_invoice
+  - action: utter_check_invoice
+- rule: Handle check_payment_methods
+  steps:
+  - intent: check_payment_methods
+  - action: utter_check_payment_methods
+- rule: Handle check_refund_policy
+  steps:
+  - intent: check_refund_policy
+  - action: utter_check_refund_policy
+- rule: Handle complaint
+  steps:
+  - intent: complaint
+  - action: utter_complaint
+- rule: Handle contact_customer_service
+  steps:
+  - intent: contact_customer_service
+  - action: utter_contact_customer_service
+- rule: Handle contact_human_agent
+  steps:
+  - intent: contact_human_agent
+  - action: utter_contact_human_agent
+- rule: Handle create_account
+  steps:
+  - intent: create_account
+  - action: utter_create_account
+- rule: Handle delete_account
+  steps:
+  - intent: delete_account
+  - action: utter_delete_account
+- rule: Handle delivery_options
+  steps:
+  - intent: delivery_options
+  - action: utter_delivery_options
+- rule: Handle delivery_period
+  steps:
+  - intent: delivery_period
+  - action: utter_delivery_period
+- rule: Handle edit_account
+  steps:
+  - intent: edit_account
+  - action: utter_edit_account
+- rule: Handle get_invoice
+  steps:
+  - intent: get_invoice
+  - action: utter_get_invoice
+- rule: Handle get_refund
+  steps:
+  - intent: get_refund
+  - action: utter_get_refund
+- rule: Handle newsletter_subscription
+  steps:
+  - intent: newsletter_subscription
+  - action: utter_newsletter_subscription
+- rule: Handle payment_issue
+  steps:
+  - intent: payment_issue
+  - action: utter_payment_issue
+- rule: Handle place_order
+  steps:
+  - intent: place_order
+  - action: utter_place_order
+- rule: Handle recover_password
+  steps:
+  - intent: recover_password
+  - action: utter_recover_password
+- rule: Handle registration_problems
+  steps:
+  - intent: registration_problems
+  - action: utter_registration_problems
+- rule: Handle review
+  steps:
+  - intent: review
+  - action: utter_review
+- rule: Handle set_up_shipping_address
+  steps:
+  - intent: set_up_shipping_address
+  - action: utter_set_up_shipping_address
+- rule: Handle switch_account
+  steps:
+  - intent: switch_account
+  - action: utter_switch_account
+- rule: Handle track_refund
+  steps:
+  - intent: track_refund
+  - action: utter_track_refund
